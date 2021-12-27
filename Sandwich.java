@@ -137,4 +137,10 @@ public class Sandwich {
 
         return t;
     }
+
+    public static String codeToWord() {
+        String x = Sandwich.input();
+
+        return Sandwich.bread(x) + Sandwich.meat(x) + Sandwich.sauce(x) + Sandwich.vegetables(x) + Sandwich.toasted(x);
+    }
 }
